@@ -25,7 +25,8 @@ github_username:  ajite
 # Build settings
 avatar: "/assets/img/avatar.png"
 markdown: kramdown
-skin: midnight
-theme: jekyll-theme-hamilton
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
+remote_theme: ngzhio/jekyll-theme-hamilton
+skin: midnight
