@@ -30,3 +30,5 @@ plugins:
   - jekyll-remote-theme
 remote_theme: ngzhio/jekyll-theme-hamilton
 skin: midnight
+
+theme: jekyll-theme-cayman
