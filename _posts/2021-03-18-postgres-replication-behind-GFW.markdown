@@ -3,9 +3,8 @@ layout: post
 title: Postgres replication behind China's GFW
 date:   2021-03-18 15:50:22 +0800
 categories: GFW bucardo postgres
+excerpt: A draft on how to replicate Postgres database through China's Great Firewall without breaking the law.
 ---
-
-A draft on how to replicate Postgres database through China's Great Firewall without breaking the law.
 # Requirements and issues
 
 I had the need to setup a master to master Postgres replication system in a very specific environment.
