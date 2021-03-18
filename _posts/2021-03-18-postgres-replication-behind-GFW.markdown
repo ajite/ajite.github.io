@@ -29,7 +29,7 @@ Another solution would be to run your own Postgres server. It is simple to setup
 
 The idea is to install bucardo on the CN2 friendly server. You don't need to replicate the database on the Bucardo server. It is a standalone application.
 
-I decided to create a Docker image with Bucardo from an existing Postgres docker image. If you do not need to need to replicate the data on the CN2 VPS you do not need to install Postgres in your docker image. You could also make 2 images, one for Postgres and one for bucardo or you could install them directly on the server without using docker.
+I decided to create a Docker image with Bucardo from an existing Postgres docker image. If you do not need to need to replicate the data on the CN2 VPS you do not need to install Postgres in your docker image. You could also make two images, one for Postgres and one for bucardo or you could install them directly on the server without using docker.
 
 I am still testing this solution, I will upgrade the architecture later before going to production. This is the Dockerfile I used for testing purpose:
 
