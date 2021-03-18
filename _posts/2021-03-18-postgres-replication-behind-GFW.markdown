@@ -12,7 +12,7 @@ I had the need to setup a master to master Postgres replication system in a very
 1. One of the server is located in mainland China behind the GFW
 1. The other server is running on a managed database from a famous cloud provider outside China.
 
-The main issue is that our Chinese office often has trouble communicating with the network located outside the GFW. Sometimes the connection might drop or it will be just impossible to access our external cloud provider. China has strict regulation regarding the use of VPN/Proxy and it was important to abide the law. Hopefully we had a server in another office in a China-friendly environment (CN2). You can replicate this setup by renting a CN2 VPS outside mainland China. They are quite expensive but they work well.
+The main issue is that our Chinese office often has trouble communicating with the network located outside the GFW. Sometimes the connection might drop or it will be just impossible to access our external cloud provider. China has strict regulation regarding the use of VPN/Proxy and it was important to abide the law. Fortunately we have a server in another office in a China-friendly environment (CN2). You can replicate this setup by renting a CN2 VPS outside mainland China. They are quite expensive but they work well.
 
 {:refdef: style="text-align: center;"}
 ![Simple server diagram](/assets/img/2021-03-18-diagram.png)
@@ -29,7 +29,7 @@ Another solution would be to run your own Postgres server. It is simple to setup
 
 The idea is to install bucardo on the CN2 friendly server. You don't need to replicate the database on the Bucardo server. It is a standalone application.
 
-I decided to create a Docker image with Bucardo from an existing Postgres docker image. If you do not need to need to replicate the data on the CN2 VPS you do not need to install Postgres in your docker image. You could also make two images, one for Postgres and one for bucardo or you could install them directly on the server without using docker.
+I decided to create a Docker image with Bucardo from an existing Postgres docker image. If you do not need to replicate the data on the CN2 VPS you do not need to install Postgres in your docker image. You could also make two images, one for Postgres and one for bucardo or you could install them directly on the server without using docker.
 
 I am still testing this solution, I will upgrade the architecture later before going to production. This is the Dockerfile I used for testing purpose:
 
