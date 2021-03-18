@@ -27,8 +27,6 @@ avatar: "/assets/img/avatar.png"
 markdown: kramdown
 plugins:
   - jekyll-feed
-  - jekyll-remote-theme
-remote_theme: ngzhio/jekyll-theme-hamilton
 skin: midnight
 
 theme: jekyll-theme-hamilton
