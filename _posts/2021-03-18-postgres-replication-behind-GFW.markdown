@@ -20,7 +20,7 @@ The main issue is that our Chinese office often has trouble communicating with t
 
 For the replication we decided to use [Bucardo](https://bucardo.org/Bucardo/). It's easy to use and seems to work pretty well for our needs.
 
-The biggest downside of this solution is that Bucardo needs SUPER USER permission to you Postgres server. This did not work with our managed database  since the administrator did not grant us the SUPER USER access. You may get around this limitation if your provider enables the pgperl extension. For those want to go that way, you may [read this article](https://www.compose.com/articles/using-bucardo-5-3-to-migrate-a-live-postgresql-database/). 
+The biggest downside of this solution is that Bucardo needs SUPER USER permission to you Postgres server. This did not work with our managed database since the administrator did not grant us the SUPER USER access. You may get around this limitation if your provider enables the pgperl extension. For those who want to go that way, you may [read this article](https://www.compose.com/articles/using-bucardo-5-3-to-migrate-a-live-postgresql-database/). 
 
 Another solution would be to run your own Postgres server. It is simple to setup but you will need to optimise and secure it yourself . It might not be suitable for everyone and might end up increasing your workload.
 
@@ -51,7 +51,7 @@ RUN echo http://dl-cdn.alpinelinux.org/alpine/v3.10/main > /etc/apk/repositories
     postgresql-client\
     && rm -fr /var/cache/apk/* \
     && mv /usr/lib/postgresql/* /usr/local/lib/postgresql/ \
-    && mv /usr/share/postgresql/extension/* /usr/local/share/postgresql/extension/
+    && mv /usr/share/postgresql/extension/* /usr/local/share/postgresql/extension/ \
     && mkdir /var/run/bucardo\
     && mkdir /var/log/bucardo\
     && ln -s /var/run/postgresql/.s.PGSQL.5432 /tmp/.s.PGSQL.5432
