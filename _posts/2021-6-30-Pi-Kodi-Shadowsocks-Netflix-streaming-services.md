@@ -8,7 +8,7 @@ excerpt: A set up to run streaming services such as Netflix and Disney Plus on a
 
 # By pass geo-blocking warning 
 
-Most of the streaming services forbid the use of proxy/VPN. This article it meant to help you set up a box in a complex home environment. You should not use it to access geo-locked content.
+Most of the streaming services forbid the use of proxy/VPN. This article is meant to help you set up a box in a complex home environment. You should not use it to access geo-locked content.
 
 I tested this setup with Netflix, Hbo Max, Disney Plus and YouTube. Everything worked like a charm.
 This article focuses on teaching you how to install the proxy client and make sure that all the traffic goes through it.
@@ -18,8 +18,8 @@ This article focuses on teaching you how to install the proxy client and make su
 
 Before starting the setup make sure of three things:
 
-1. Have an access to a Shadowsocks proxy. You may setup like [Outline](https://getoutline.org/).
-2. The proxied network must have access to Netflix, Disney Plus or Hbo Max.
+1. Have an access to a Shadowsocks proxy. You may setup something like [Outline](https://getoutline.org/).
+2. The proxied network must have access to your streaming service.
 3. You do have a streaming service account
 
 This was tested on a Rasperry Pi 3B+. It might not work with earlier version.
