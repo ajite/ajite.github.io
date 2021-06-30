@@ -3,7 +3,7 @@ layout: post
 title: Raspberry Pi with KODI that works with Netflix and other streaming services behind a proxy
 date:   2021-06-30 10:05:28 +0800
 categories: GFW bucardo postgres
-excerpt: A set up to run streaming services such as Netflix and Disney Plus on a RasperryPi with Kodi behind a proxy. This article focuses on the proxy set up and make sure that all the traffic go through it.
+excerpt: A set up to run streaming services such as Netflix and Disney Plus on a RasperryPi with Kodi behind a proxy. This article focuses on the proxy set up and make sure that all the traffic goes through it.
 ---
 
 # By pass geo-blocking warning 
